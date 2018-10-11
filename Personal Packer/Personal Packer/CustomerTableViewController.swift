@@ -61,7 +61,7 @@ class CustomerTableViewController: UITableViewController,UISearchResultsUpdating
             as! AppDelegate).persistentContainer.viewContext
         
         //let fetchRequest = NSFetchRequest(entityName:"Contact")
-        let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Contact")
+        let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Customer")
         
         do {
             let fetchedResults = try managedContext.fetch(fetchRequest) as? [NSManagedObject]
@@ -137,7 +137,7 @@ class CustomerTableViewController: UITableViewController,UISearchResultsUpdating
                 tableView.dequeueReusableCell(withIdentifier: "Cell")
                     as UITableViewCell!
             let person = filteredTableData[(indexPath as NSIndexPath).row]
-            cell?.textLabel?.text = person.value(forKey: "fullname") as! String?
+            cell?.textLabel?.text = person.value(forKey: "customername") as! String?
             cell?.detailTextLabel?.text = ">>"
             return cell!
         }
@@ -146,7 +146,7 @@ class CustomerTableViewController: UITableViewController,UISearchResultsUpdating
                 tableView.dequeueReusableCell(withIdentifier: "Cell")
                     as UITableViewCell!
             let person = customerArray[(indexPath as NSIndexPath).row]
-            cell?.textLabel?.text = person.value(forKey: "fullname") as! String?
+            cell?.textLabel?.text = person.value(forKey: "customername") as! String?
             cell?.detailTextLabel?.text = ">>"
             return cell!
         }
