@@ -208,7 +208,7 @@ class CustomerTableViewController: UITableViewController,UISearchResultsUpdating
         //**Begin Copy**
         //13) Uncomment & Change to go to proper record on proper Viewcontroller
         
-        if segue.identifier == "UpdateCuctomers" {
+        if segue.identifier == "UpdateCustomers" {
             if let destination = segue.destination as?
                 ViewController {
                 if (self.resultSearchController.isActive) {

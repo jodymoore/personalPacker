@@ -101,16 +101,16 @@ class ViewController: UIViewController {
         
         if (Customerdb != nil)
         {
-            customername.text = Customerdb.value(forKey: "fullname") as? String
-            customeremail.text = Customerdb.value(forKey: "email") as? String
-            parachutetype.text = Customerdb.value(forKey: "phone") as? String
-         //   packjobs = Customerdb.value(forKey: "packjobs") as? String
+            customername.text = Customerdb.value(forKey: "customername") as? String
+            customeremail.text = Customerdb.value(forKey: "customeremail") as? String
+            parachutetype.text = Customerdb.value(forKey: "parachutetype") as? String
+            packjobs.text = Customerdb.value(forKey: "packjobs") as? String
             btnSave.setTitle("Update", for: UIControlState())
             btnEdit.isHidden = false
             customername.isEnabled = false
             customeremail.isEnabled = false
             packjobs.isEnabled = false
-              parachutetype.isEnabled = false
+            parachutetype.isEnabled = false
             btnSave.isHidden = true
         }else{
             btnEdit.isHidden = true
