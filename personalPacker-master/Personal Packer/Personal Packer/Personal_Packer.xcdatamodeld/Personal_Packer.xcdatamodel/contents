@@ -3,7 +3,7 @@
     <entity name="Customer" representedClassName="Customer" syncable="YES" codeGenerationType="class">
         <attribute name="customeremail" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="customername" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="packjobs" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="packjobs" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="parachutetype" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>

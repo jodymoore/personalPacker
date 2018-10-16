@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B5366822175802C00C06E59 /* parachuteImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B5366812175802B00C06E59 /* parachuteImage.png */; };
 		1B916A28216D50F500A6081A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B916A27216D50F500A6081A /* AppDelegate.swift */; };
 		1B916A2A216D50F500A6081A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B916A29216D50F500A6081A /* ViewController.swift */; };
 		1B916A2D216D50F500A6081A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B916A2B216D50F500A6081A /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B5366812175802B00C06E59 /* parachuteImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = parachuteImage.png; path = "../../../../skydive facility logos/parachuteImage.png"; sourceTree = "<group>"; };
 		1B916A24216D50F500A6081A /* Personal Packer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Packer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B916A27216D50F500A6081A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B916A29216D50F500A6081A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B53668021757FCB00C06E59 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				1B5366812175802B00C06E59 /* parachuteImage.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		1B916A1B216D50F500A6081A = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +68,7 @@
 		1B916A26216D50F500A6081A /* Personal Packer */ = {
 			isa = PBXGroup;
 			children = (
+				1B53668021757FCB00C06E59 /* images */,
 				1B916A27216D50F500A6081A /* AppDelegate.swift */,
 				1B916A29216D50F500A6081A /* ViewController.swift */,
 				1B916A2B216D50F500A6081A /* Main.storyboard */,
@@ -129,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B916A35216D50FE00A6081A /* LaunchScreen.storyboard in Resources */,
+				1B5366822175802C00C06E59 /* parachuteImage.png in Resources */,
 				1B916A32216D50FE00A6081A /* Assets.xcassets in Resources */,
 				1B916A2D216D50F500A6081A /* Main.storyboard in Resources */,
 			);
@@ -287,7 +299,7 @@
 		1B916A3A216D50FE00A6081A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Personal Packer/Info.plist";
@@ -306,7 +318,7 @@
 		1B916A3B216D50FE00A6081A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Personal Packer/Info.plist";

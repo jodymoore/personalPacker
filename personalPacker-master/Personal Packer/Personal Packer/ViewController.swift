@@ -59,7 +59,7 @@ class ViewController: UIViewController {
             Customerdb.setValue(customername.text, forKey: "customername")
             Customerdb.setValue(customeremail.text, forKey: "customeremail")
             Customerdb.setValue(parachutetype.text, forKey: "parachutetype")
-            Customerdb.setValue(Int32(packjobs.text!), forKey: "packjobs")
+            Customerdb.setValue(packjobs.text, forKey: "packjobs")
             
         }
         else
@@ -73,8 +73,7 @@ class ViewController: UIViewController {
             customer.customername = customername.text!
             customer.customeremail = customeremail.text!
             customer.parachutetype = parachutetype.text!
-            let number:Int32!  = Int32(packjobs.text!)
-            customer.packjobs = number
+            customer.packjobs = packjobs.text!
         }
         var error: NSError?
         do {
